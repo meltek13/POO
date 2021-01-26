@@ -36,10 +36,22 @@ puts "                          combattants ATTAQUEZ! "
 puts ""
 puts                          player1.attacks(player2)
 
-                          break if player2.life_points <= 0
+    if player2.life_points <= 0                       
+        puts "#{player1.name} a gagné !!"
+        break
+    end
+
                   
 puts ""
 puts                          player2.attacks(player1)
+puts""
+
+    if player1.life_points <= 0
+     puts "#{player2.name} a gagné !!"
+    end
+    
+    
+    
 
 end
 
